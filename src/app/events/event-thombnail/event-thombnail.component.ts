@@ -7,14 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EventThombnailComponent implements OnInit {
 
+  event = {
+      data: 'Event Data',
+      time: new Date(),
+      price: 900,
+    }
   constructor(/* public event: object*/) { }
 
   ngOnInit() {
-    // this.event = {
-      // data: 'Event Data',
-      // time: new Date(),
-      // price: 900,
-    // }
   }
 
 }
