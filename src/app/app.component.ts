@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+// import { EventThombnailComponent } from './events/event-thombnail/event-thombnail.component'
 
 @Component({
   selector: 'app-root',
