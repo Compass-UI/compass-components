@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output } from '@angular/core';
+import { EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'ual-flight',
@@ -11,5 +12,9 @@ export class FlightComponent implements OnInit {
 
   ngOnInit() {
   }
+
+  @Input() flight: any;
+
+  @Output() childClicked = new EventEmitter();
 
 }

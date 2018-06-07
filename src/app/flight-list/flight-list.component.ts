@@ -6,6 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./flight-list.component.css']
 })
 export class FlightListComponent implements OnInit {
+  flight1 = {
+    from: 'ORD',
+    to: 'SFO',
+    date: new Date()
+  }
 
   constructor() { }
 
