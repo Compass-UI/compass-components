@@ -9,10 +9,12 @@ declare let toster // for later use
   styleUrls: ['./flight-list.component.css']
 })
 export class FlightListComponent implements OnInit {
+  flights
   flight1 = {
     from: 'ORD',
     to: 'SFO',
-    date: new Date()
+    date: new Date(),
+    flights: 123
   }
 
   constructor(private shoppingService: ShoppingService) { }

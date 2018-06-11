@@ -8,8 +8,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-  private username: string;
-  private password: string;
+  public username: string;
+  public password: string;
 
   // constructor(private username: string, private password: string) { }
   constructor() { }
