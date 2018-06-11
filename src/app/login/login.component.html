@@ -1,7 +1,9 @@
 
-Username: <input [(ngModel)]="username" type="text">
+<!-- Username: <input [(ngModel)]="username" type="text"> -->
+Username: <input (ngModel)="username" type="text">
 Username: <input (input)="username=$event.target.value" type="text">
-Password: <input [(ngModel)]="password" type="password">
+<!-- Password: <input [(ngModel)]="password" type="password"> -->
+Password: <input (ngModel)="password" type="password">
 
 <!-- Username: <input type="text"> -->
 <!-- Password: <input type="password"> -->
