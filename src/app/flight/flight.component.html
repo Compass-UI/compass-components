@@ -1,10 +1,13 @@
-<div class="box">
-  from: YYZ
-  to: DXB
-  duration: 15h50m
+<h3>Flight</h3>
+<div class="box" *ngFor="let f of flights ">
+  <!-- from: YYZ -->
+  <!-- to: DXB -->
+  <!-- duration: 15h50m -->
   <!-- ERROR TypeError: Cannot read property 'from' of undefined -->
-  <!-- {{flight.from}} -->
-  <!-- {{flight.to}} -->
-  <!-- {{flight.date}} -->
-  <!-- {{flight}} -->
+  {{f.from}}
+  {{f.to}}
+  {{f.date}}
+</div>
+<div>
+  {{flights | json }}
 </div>

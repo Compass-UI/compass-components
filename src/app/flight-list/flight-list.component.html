@@ -2,8 +2,8 @@
     <h1>Flights</h1>
     <ual-flight></ual-flight>
     <ual-flight></ual-flight>
-    <ual-flight [flight]="flight1"></ual-flight>
-    <!-- <ual-flight [flight]="flight1"></ual-flight> -->
+    <ual-flight [flights]="flight1"></ual-flight>
+    <ual-flight [flights]="flight1.flight"></ual-flight>
     <hr>
     <div *ngFor="let f of flight1.flights">
         {{f.from}} - {{f.to}} - {{f.flight}}

@@ -13,7 +13,7 @@ export class FlightComponent implements OnInit {
   ngOnInit() {
   }
 
-  @Input() flight: any;
+  @Input() flights: any;
 
   @Output() childClicked = new EventEmitter();
 
