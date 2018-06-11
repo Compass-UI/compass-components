@@ -7,6 +7,9 @@ import { EventThombnailComponent } from './events/event-thombnail/event-thombnai
 import { FlightComponent } from './flight/flight.component';
 import { FlightListComponent } from './flight-list/flight-list.component';
 import { ShoppingService } from './shopping.service';
+import { LoginComponent } from './login/login.component';
+
+import { FormsModule, ReactiveFormsModule } from '@angular/forms'; // (ngModel)
 
 
 @NgModule({
@@ -14,10 +17,12 @@ import { ShoppingService } from './shopping.service';
     AppComponent,
     EventThombnailComponent,
     FlightComponent,
-    FlightListComponent
+    FlightListComponent,
+    LoginComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [
     ShoppingService
