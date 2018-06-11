@@ -17,6 +17,7 @@ export class FlightListComponent implements OnInit {
   constructor(private shoppingService: ShoppingService) { }
 
   ngOnInit() {
+    this.flight1 = this.getFlights();
   }
   // getFlights(): Observable<any>{
     getFlights(){

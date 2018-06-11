@@ -10,9 +10,9 @@ export class ShoppingService {
     getFlights(): any{
     return {
         flights: [
-          {"from": "ORD", "to": "SFO", "flight": 124},
-          {"from": "WAS", "to": "ORD", "flight": 48},
-          {"from": "DXB", "to": "YYZ", "flight": 973},
+          {"from": "ORD", "to": "SFO", "flight": 124, date: new Date()},
+          {"from": "WAS", "to": "ORD", "flight": 48, date: new Date()},
+          {"from": "DXB", "to": "YYZ", "flight": 973, date: new Date()},
         ]
     }
   }
