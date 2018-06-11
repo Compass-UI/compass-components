@@ -26,5 +26,9 @@ export class LoginComponent implements OnInit {
     console.log(form);
     // alert(form);
   }
+  sampleData(){
+    this.username = '123';
+    this.password = 'passx';
+  }
 
 }

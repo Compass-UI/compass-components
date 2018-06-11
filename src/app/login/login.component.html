@@ -1,7 +1,8 @@
 
+<!-- (ngSubmit)="login(loginForm)" -->
 <form
     #loginForm="ngForm"
-    (submit)="login(loginForm)"
+    (ngSubmit)="login(loginForm.value)"
     autocomplete="off">
     <!-- Username: <input [(ngModel)]="username" type="text"> -->
     Username: <input (ngModel)="username" name="username" type="text">
@@ -15,4 +16,5 @@
     <input type="button" (click)="handleSubmit()" value="Submit">
     <input type="button" (click)="handleCancel()" value="Cancel">
     <button (click)="login()">login()</button>
+    <button (click)="sampleData()">sampleData</button>
 </form>
