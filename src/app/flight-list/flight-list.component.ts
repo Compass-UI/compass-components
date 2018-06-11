@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ShoppingService } from '../shopping.service';
+import { Observable } from 'rxjs/Observable';
 
 @Component({
   selector: 'ual-flight-list',
@@ -12,9 +14,13 @@ export class FlightListComponent implements OnInit {
     date: new Date()
   }
 
-  constructor() { }
+  constructor(private shoppingService: ShoppingService) { }
 
   ngOnInit() {
+  }
+  // getFlights(): Observable<any>{
+    getFlights(){
+    return this.shoppingService.getFlights()
   }
 
 }

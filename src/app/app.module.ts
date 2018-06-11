@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { EventThombnailComponent } from './events/event-thombnail/event-thombnail.component';
 import { FlightComponent } from './flight/flight.component';
 import { FlightListComponent } from './flight-list/flight-list.component';
+import { ShoppingService } from './shopping.service';
 
 
 @NgModule({
@@ -18,7 +19,9 @@ import { FlightListComponent } from './flight-list/flight-list.component';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [
+    ShoppingService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
