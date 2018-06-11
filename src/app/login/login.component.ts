@@ -22,5 +22,9 @@ export class LoginComponent implements OnInit {
   handleCancel(){
     alert('Cancelling...');
   }
+  login(form){
+    console.log(form);
+    // alert(form);
+  }
 
 }
