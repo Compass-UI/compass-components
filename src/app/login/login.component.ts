@@ -20,7 +20,7 @@ export class LoginComponent implements OnInit {
     alert(`${this.username} with ${this.password}`);
   }
   handleCancel(){
-    alert('Cancelling');
+    alert('Cancelling...');
   }
 
 }
