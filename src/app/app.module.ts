@@ -11,6 +11,7 @@ import { LoginComponent } from './login/login.component';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms'; // (ngModel)
 import { AuthService } from './auth.service';
+import { NavbarComponent } from './navbar/navbar.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { AuthService } from './auth.service';
     EventThombnailComponent,
     FlightComponent,
     FlightListComponent,
-    LoginComponent
+    LoginComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,

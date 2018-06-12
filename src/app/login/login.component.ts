@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output } from '@angular/core';
 import { AuthService } from '../auth.service';
 
 @Component({
@@ -21,9 +21,11 @@ export class LoginComponent implements OnInit {
   handleCancel(){
     alert('Cancelling...');
   }
+  @Output()
   login(form){
     console.log(form);
     // alert(form);
+    this.authService.loginUser('124', 'passx');
   }
   sampleData(){
     this.username = '123';

@@ -14,6 +14,7 @@ export class AuthService {
       lastName: 'Shams',
       ussername: 'david'
     }
+    console.log(`User ${username} logged in with passwrod: ${password}`);
   }
   isAuthenticated(){
     return !!this.currentUser;
