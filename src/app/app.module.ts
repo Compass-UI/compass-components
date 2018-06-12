@@ -13,10 +13,17 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms'; // (ngModel)
 import { AuthService } from './auth.service';
 import { NavbarComponent } from './navbar/navbar.component';
 import { RouterModule, Routes } from '@angular/router';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 const appRoutes: Routes = [
   { path: 'login', component: LoginComponent },
-  { path: 'home',      component: FlightListComponent },
+  { path: 'shopping',      component: FlightListComponent },
+  { path: '',
+  redirectTo: '/home',
+  pathMatch: 'full'
+},
+{ path: '**', component: PageNotFoundComponent }
+
 ]
 @NgModule({
   declarations: [
@@ -25,7 +32,8 @@ const appRoutes: Routes = [
     FlightComponent,
     FlightListComponent,
     LoginComponent,
-    NavbarComponent
+    NavbarComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
