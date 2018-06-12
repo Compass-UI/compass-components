@@ -12,8 +12,12 @@ import { LoginComponent } from './login/login.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms'; // (ngModel)
 import { AuthService } from './auth.service';
 import { NavbarComponent } from './navbar/navbar.component';
+import { RouterModule, Routes } from '@angular/router';
 
-
+const appRoutes: Routes = [
+  { path: 'login', component: LoginComponent },
+  { path: 'home',      component: FlightListComponent },
+]
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +29,13 @@ import { NavbarComponent } from './navbar/navbar.component';
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    RouterModule.forRoot(
+      appRoutes,
+      { enableTracing: true } // <-- debugging purposes only
+    )
+
+    
   ],
   providers: [
     ShoppingService,
