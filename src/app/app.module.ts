@@ -10,6 +10,7 @@ import { ShoppingService } from './shopping.service';
 import { LoginComponent } from './login/login.component';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms'; // (ngModel)
+import { AuthService } from './auth.service';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms'; // (ngModel)
     FormsModule
   ],
   providers: [
-    ShoppingService
+    ShoppingService,
+    AuthService
   ],
   bootstrap: [AppComponent]
 })
