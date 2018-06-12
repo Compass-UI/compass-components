@@ -1,5 +1,10 @@
 # LearingAngular
 
+## Angular Language Service
+
+[https://angular.io/guide/language-service](https://angular.io/guide/language-service)
+
+`npm install --save-dev @angular/language-service`
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.4.
 
 ## Development server
