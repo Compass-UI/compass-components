@@ -15,22 +15,25 @@ export class LoginComponent implements OnInit {
 
   ngOnInit() {
   }
-  handleSubmit(){
+  handleSubmit() {
     alert(`${this.username} with ${this.password}`);
   }
-  handleCancel(){
+  handleCancel() {
     alert('Cancelling...');
   }
   @Output()
-  login(form){
+  login(form) {
     console.log(form);
     // alert(form);
     // this.authService.loginUser('124', 'passx');
     this.authService.loginUser(form.username, form.password);
   }
-  sampleData(){
+  sampleData() {
     this.username = '123';
     this.password = 'passx';
+  }
+  isAuthenticated() {
+    return this.authService.isAuthenticated();
   }
 
 }

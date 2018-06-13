@@ -7,16 +7,16 @@ export class AuthService {
 
   constructor() { }
 
-  loginUser(username: string, password: string){
+  loginUser(username: string, password: string) {
     this.currentUser = {
       id: 1,
       firstName: 'David',
       lastName: 'Shams',
       ussername: 'david'
-    }
+    };
     console.log(`User ${username} logged in with passwrod: ${password}`);
   }
-  isAuthenticated(){
+  isAuthenticated() {
     return !!this.currentUser;
   }
 
