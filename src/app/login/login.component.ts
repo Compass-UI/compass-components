@@ -9,6 +9,7 @@ import { AuthService } from '../auth.service';
 export class LoginComponent implements OnInit {
   public username: string;
   public password: string;
+  public mouseoverLogin = null;
 
   // constructor(private username: string, private password: string) { }
   constructor(private authService: AuthService) { }
