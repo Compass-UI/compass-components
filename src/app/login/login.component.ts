@@ -25,7 +25,8 @@ export class LoginComponent implements OnInit {
   login(form){
     console.log(form);
     // alert(form);
-    this.authService.loginUser('124', 'passx');
+    // this.authService.loginUser('124', 'passx');
+    this.authService.loginUser(form.username, form.password);
   }
   sampleData(){
     this.username = '123';
