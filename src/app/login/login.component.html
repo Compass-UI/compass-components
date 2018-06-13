@@ -15,7 +15,13 @@
 
     <input type="button" (click)="handleSubmit()" value="Submit">
     <input type="button" (click)="handleCancel()" value="Cancel">
-    <button (click)="login(loginForm)">login()</button>
+    <button (click)="login(loginForm)" [disabled]="loginForm.invalid">login()</button>
     <button (click)="sampleData()">sampleData</button>
-    {{isAuthenticated()}}
+    Logged in: {{isAuthenticated()}}
+    <div>
+    <!-- {{loginForm.control.username.valid}}, -->
+    <!-- {{loginForm.controls.password.valid}}, -->
+    <!-- {{loginForm | json}},     -->
+    </div>
+    
 </form>
